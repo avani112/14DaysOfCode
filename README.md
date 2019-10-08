@@ -10,9 +10,9 @@
 ## beginner
 - Solve Me First -> return.cpp
 - A Very Big Sum -> bigSum.cpp
-- Cats and a Mouse -> catmouse.cpp
-- Divisible Sum Pairs -> div.java
-- Grading Students -> garade.java
+- Cats and a Mouse -> catmouse.c, catandmouse.java
+- Divisible Sum Pairs -> SumPair.java
+- Grading Students -> grade.java
 - Birthday Cake Candles -> bdayCakeCandles.java
 - Diagonal Difference -> diagDiff.cpp
 - Constructing a Number -> const.cpp
