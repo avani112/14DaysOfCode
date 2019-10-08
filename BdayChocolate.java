@@ -10,15 +10,15 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class Solution {
+public class BdayChocolate {
 
     // Complete the birthday function below.
-    static int birthday(List<Integer> s, int d, int m) {
-        int n = s.size(); int sum=0, count=0;
-        // System.out.println(n);
-                for(int i=0;i<n;i++){
+   static int birthday(List<Integer> s, int d, int m) {
+        int n = s.size(), count=0;
+                for(int i=0;i<n-m+1;i++){
+                    int sum=0;
                     for(int j=0;j<m;j++){
-                        sum=sum+s.get(j+i);
+                        sum=sum+s.get(i+j);
                     }
                     if(sum==d) count++;
                 }
