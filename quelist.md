@@ -1,4 +1,4 @@
-intermidiate
+# Intermidiate
   
 Tree: Preorder Traversal  
 
@@ -25,7 +25,8 @@ Diwali Lights
 Forming a Magic Square  
 
 
-beginner
+
+# Beginner
 
 Solve Me First 
 
