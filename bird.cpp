@@ -2,42 +2,33 @@
 
 using namespace std;
 
-int migratoryBirds(int n, vector <int> ar) {
-    // Complete this function
-    int f[5];
-    for(int i=1;i<=5;i++)
-    {
-        int c=0;
-        for(int j=0;j<n;j++)
-        {
-            if(ar[j]==i)
-            {
-                c++;
-            }
-            f[i-1]=c;
+int bird(vector<int> a, int n){
+    int ar[5];
+    for(int i=1;i<=5;i++){
+        int count=0;
+        for(int j=0;j<n;j++){
+            if(a[j]==i) count++;
+            ar[i-1]=count;              
         }
     }
-    int max=f[0],loc=0;
-    for(int k=1;k<5;k++)
-    {
-        if(f[k]>max)
-        {
-            max=f[k];
-            loc=k;
+    int max=ar[0], finalcount=0;
+    for(int k=1;k<5;k++){
+        if(ar[k]>max){
+            max=ar[k];
+            finalcount=k;
         }
-        
     }
-    return (loc+1);
+    return finalcount+1;
 }
 
-int main() {
+int main(){
     int n;
-    cin >> n;
-    vector<int> ar(n);
-    for(int ar_i = 0; ar_i < n; ar_i++){
-       cin >> ar[ar_i];
-    }
-    int result = migratoryBirds(n, ar);
-    cout << result << endl;
+    cin>>n;
+    vector<int> a(n);
+   for(int i=0;i<n;i++){
+       cin>>a[i];
+   }
+    int result=bird(a,n);
+    cout<<result<<" ";
     return 0;
 }
